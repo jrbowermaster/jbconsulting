@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JB's Spain Journal</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="top-nav">
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../apps/index.html">Apps & Games</a>
+    <a href="../music/index.html">Music</a>
+    <a href="../writing/index.html">Writing</a>
+
+  </div>
+
+  <button id="themeToggle">🌙</button>
+</nav>
+
+<div class="container">
+
+  <h1>My Spain Journal</h1>
+
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>
+      Links to different months are at the top. Eventually I would like to have summaries listed here.
+    </p>
+
+    <h3>2026</h3>
+    <p>
+    Summary: Fuerteventura. VIETNAM. Thailand. Lake phone. BCN volley groups, wednesday nights, more friend hangs. Day trips. RIP Rocky. <br>
+    </p>
+    
+    <ul>
+      <li><a href="2026months/january.html">January</a></li>
+    </ul>
+    
+    <ul>
+      <li><a href="2026months/february.html">February</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="2026months/march.html">March</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="2026months/april.html">April</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="2026months/may.html">May</a></li>
+    </ul>
+
+    <h3>2025</h3>
+    <p>
+    Summary:<br>
+    </p>
+    
+  </div>
+
+</div>
+
+  <!--MAKES THE DARK MODE BUTTON WORK -->
+  <script>
+  const toggle = document.getElementById("themeToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    // optional: remember choice
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggle.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggle.textContent = "🌙";
+    }
+  });
+
+  // load saved theme on page load
+  const saved = localStorage.getItem("theme");
+
+  if (saved === "dark") {
+    document.body.classList.add("dark");
+    toggle.textContent = "☀️";
+  }
+</script>
+  
+<!-- SAMPLE SECTION
+  <div class="post">
+  <h2>Welcome</h2>
+  <div class="date">June 3, 2026</div>
+  <p>This is my first post. It feels good to start.</p>
+
+  <ul>
+  <li><a href="january/index.html">January</a></li>
+</ul>
+</div>
+-->
+  
+</body>
+  
+</html>

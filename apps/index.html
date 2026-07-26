@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Journal</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+<nav class="top-nav">
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../journal/index.html">Journal</a>
+    <a href="../music/index.html">Music</a>
+    <a href="../writing/index.html">Writing</a>
+  </div>
+
+  <button id="themeToggle">🌙</button>
+</nav>
+
+<div class="container">
+
+  <h1>JB's Apps & Games</h1>
+
+  <div class="card">
+    <h2>Apps I'm Working On</h2>
+    <p>
+      Vball stats tracker<br>
+
+      - Basically prosportsreference for vball, where you can easily track match records, scores, all-time stats, etc.<br>
+
+      Curious who the most dominant blocker of all time is? Who has the most digs? Who would be the best all-around player of all time? Look no further.
+
+      <ul>
+      <li><a href="journal/index.html">VBall Stats</a></li>
+    </ul>
+      
+      JamBud <br>
+    
+    A one-stop music app. Create a musician-focused profile and find fellow musicians in your area to jam with, collaborate on projects, whatever. <br>
+    
+    Use the calendar to post where and when you are playing live, and find others in your area just as easily.<br>
+    
+    Network with others to collaborate on projects virtually
+
+    <ul>
+      <li><a href="journal/index.html">JamBud</a></li>
+    </ul>
+      
+      BeachBash <br>
+    
+      3D beach volleyball game
+    </p>
+
+    <ul>
+      <li><a href="journal/index.html">BeachBash</a></li>
+    </ul>
+    
+  </div>
+
+</div>
+
+  <!--MAKES THE DARK MODE BUTTON WORK -->
+  <script>
+  const toggle = document.getElementById("themeToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    // optional: remember choice
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggle.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggle.textContent = "🌙";
+    }
+  });
+
+  // load saved theme on page load
+  const saved = localStorage.getItem("theme");
+
+  if (saved === "dark") {
+    document.body.classList.add("dark");
+    toggle.textContent = "☀️";
+  }
+</script>
+  
+<!-- SAMPLE SECTION
+  <div class="post">
+  <h2>Welcome</h2>
+  <div class="date">June 3, 2026</div>
+  <p>This is my first post. It feels good to start.</p>
+
+  <ul>
+  <li><a href="january/index.html">January</a></li>
+</ul>
+</div>
+-->
+  
+</body>
+  
+</html>
