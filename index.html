@@ -1,122 +1,430 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jacob Bowermaster</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="JB Consulting helps teams improve documentation, knowledge systems, processes, and operations through focused consulting and project-based work."
+  >
+
+  <title>JB Consulting | Documentation & Operations</title>
 
   <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
 </head>
 
 <body>
 
-<nav class="top-nav">
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="./portfolio/index.html">📖 Portfolio</a>
-    <a href="./services/index.html">💻 Services</a>
-  </div>
+  <!-- NAVIGATION -->
+  <nav class="top-nav">
+    <div class="nav-inner">
 
-  <button id="themeToggle">🌙</button>
-</nav>
+      <a class="brand" href="index.html">
+        JB<span> Consulting</span>
+      </a>
 
-<div class="container">
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="portfolio/index.html">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
 
-  <h1>Jacob Bowermaster</h1>
-  <h2>Overview</h2>
-    <p>
-      Welcome! I'm a business operations and systems professional with more than a decade of experience helping organizations improve the way they work.
-      Throughout my career, I've partnered with teams across multiple industries to streamline operations, optimize business processes, improve data quality, and build documentation that empowers employees to work more efficiently. <br>
-      Whether you're implementing a new platform, documenting critical business processes, improving operational workflows, or organizing institutional knowledge, I focus on creating practical, scalable solutions that reduce complexity and support long-term growth.
-      <br>
-      My areas of expertise include:<br>
+      <button
+        id="themeToggle"
+        class="theme-toggle"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        ◐
+      </button>
 
-      Business & Data Analysis<br>
-      Business Process Improvement<br>
-      Operations & Workflow Optimization<br>
-      Platform Administration<br>
-      Knowledge Management<br>
-      Technical Documentation<br>
-      Process Documentation & SOP Development<br>
-      Internal Knowledge Base Design<br>
-      Cross-functional Project Coordination<br>
+    </div>
+  </nav>
 
-Explore my portfolio to see examples of projects I've delivered, or learn more about the services I provide below: <br>
 
-  <div class="card">
-    
-      <h3><a href="portfolio/index.html">Portfolio</a></h3>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="hero-content">
+
+        <p class="eyebrow">INDEPENDENT CONSULTING</p>
+
+        <h1>
+          I make complicated
+          <span>things make sense.</span>
+        </h1>
+
+        <p class="hero-text">
+          I help teams turn messy documentation, scattered knowledge,
+          and inefficient processes into systems that are easier to
+          understand, use, and maintain.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="button button-primary">
+            Tell me what you're working on
+          </a>
+
+          <a href="portfolio/index.html" class="button button-secondary">
+            See my work
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-aside">
+        <div class="hero-stat">
+          <strong>10+</strong>
+          <span>years of experience</span>
+        </div>
+
+        <div class="hero-stat">
+          <strong>2</strong>
+          <span>core areas of focus</span>
+        </div>
+
+        <div class="hero-stat">
+          <strong>1</strong>
+          <span>goal: make your work easier</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I DO</p>
+        <h2>Two ways I can help.</h2>
+        <p>
+          Most projects fall somewhere between information that needs
+          organizing and work that needs improving.
+        </p>
+      </div>
+
+
+      <div class="service-grid">
+
+        <!-- SERVICE 1 -->
+        <article class="service-card">
+
+          <div class="service-number">01</div>
+
+          <h3>Documentation &amp; Knowledge Management</h3>
+
+          <p class="service-lead">
+            Turn scattered, outdated, or difficult-to-use information
+            into documentation your team can actually rely on.
+          </p>
+
+          <ul>
+            <li>Documentation audits and cleanup</li>
+            <li>Knowledge-base restructuring</li>
+            <li>Technical and process documentation</li>
+            <li>SOPs and internal guides</li>
+            <li>Information architecture</li>
+            <li>Documentation migrations</li>
+          </ul>
+
+          <a href="services/index.html#documentation" class="text-link">
+            Explore documentation services →
+          </a>
+
+        </article>
+
+
+        <!-- SERVICE 2 -->
+        <article class="service-card">
+
+          <div class="service-number">02</div>
+
+          <h3>Operations &amp; Process Improvement</h3>
+
+          <p class="service-lead">
+            Untangle the processes that have become unnecessarily
+            complicated and leave your team with a clearer way of working.
+          </p>
+
+          <ul>
+            <li>Process and workflow analysis</li>
+            <li>Operational assessments</li>
+            <li>Process mapping and redesign</li>
+            <li>Requirements gathering</li>
+            <li>Cross-functional project support</li>
+            <li>Implementation and optimization</li>
+          </ul>
+
+          <a href="services/index.html#operations" class="text-link">
+            Explore operations services →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- HOW I WORK -->
+    <section class="section process-section">
+
+      <div class="section-heading">
+        <p class="eyebrow">HOW I WORK</p>
+        <h2>Focused projects. Useful outcomes.</h2>
+        <p>
+          You don't necessarily need another full-time employee.
+          Sometimes you just need someone experienced to come in,
+          solve a problem, and leave things better than they found them.
+        </p>
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-step">
+          <span>01</span>
+          <h3>Understand</h3>
+          <p>
+            We figure out what's actually happening, where the friction
+            is, and what success should look like.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span>02</span>
+          <h3>Define</h3>
+          <p>
+            We establish a practical scope, timeline, and set of
+            deliverables.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span>03</span>
+          <h3>Improve</h3>
+          <p>
+            I do the work: analyze, organize, document, redesign,
+            coordinate, and implement.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span>04</span>
+          <h3>Hand off</h3>
+          <p>
+            You get something your team can actually use and maintain
+            after the project is over.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CREDIBILITY -->
+    <section id="about" class="section credibility-section">
+
+      <div class="credibility-content">
+
+        <div>
+          <p class="eyebrow">WHY ME</p>
+
+          <h2>
+            Experience across the business,
+            technical, and operational sides.
+          </h2>
+        </div>
+
+        <div class="credibility-copy">
+
+          <p>
+            I've spent more than a decade working across product
+            operations, technical writing, business analysis, systems,
+            documentation, and process improvement.
+          </p>
+
+          <p>
+            That means I can work with the people defining the problem,
+            the people building the solution, and the people who
+            ultimately have to use it.
+          </p>
+
+          <p>
+            My work has included enterprise platforms, knowledge bases,
+            technical documentation, system implementations,
+            integrations, requirements gathering, workflow optimization,
+            analytics, and migration projects.
+          </p>
+
+          <div class="tool-list">
+            <span>Highspot</span>
+            <span>Aha!</span>
+            <span>Confluence</span>
+            <span>Jira</span>
+            <span>Azure DevOps</span>
+            <span>ServiceNow</span>
+            <span>Power BI</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>SharePoint</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WORK -->
+    <section class="section work-preview">
+
+      <div class="section-heading split-heading">
+
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>I've been solving these problems for a while.</h2>
+        </div>
+
+        <a href="portfolio/index.html" class="text-link">
+          View all work →
+        </a>
+
+      </div>
+
+
+      <div class="work-grid">
+
+        <article class="work-card">
+          <div class="work-category">DOCUMENTATION</div>
+
+          <h3>Technical Documentation &amp; Knowledge Systems</h3>
+
+          <p>
+            Designed and maintained documentation ecosystems spanning
+            internal teams, external users, technical content,
+            training materials, and developer resources.
+          </p>
+
+          <a href="portfolio/index.html" class="text-link">
+            Read the case study →
+          </a>
+        </article>
+
+
+        <article class="work-card">
+          <div class="work-category">OPERATIONS</div>
+
+          <h3>Product Operations &amp; Systems Integration</h3>
+
+          <p>
+            Connected product strategy, development, reporting, and
+            operational systems while improving workflows and visibility
+            for stakeholders.
+          </p>
+
+          <a href="portfolio/index.html" class="text-link">
+            Read the case study →
+          </a>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+      <div class="contact-box">
+
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+
+        <h2>
+          Tell me what's getting in the way.
+        </h2>
+
+        <p>
+          Whether your documentation is a mess, your process has become
+          painful, or you've got a project that needs someone to take
+          ownership, I'd be happy to hear what you're working on.
+        </p>
+
+        <a
+          href="mailto:jrbowermaster@gmail.com"
+          class="button button-primary"
+        >
+          Start a conversation
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div>
+      <strong>JB Consulting</strong>
       <p>
-      My portfolio of work that I have delivered throughout my career.
-
-      Examples of work include: <br>
-      - Designing and auditing business processes to improve operational consistency<br>
-      - Developing knowledge bases for internal documentation and data/reporting resources, to reduce onboarding time and improve information accessibility<br>
-      - Administration of enterprise platforms and enhancing user experience through system and process improvements<br>
-      - Analyzing business requirements and serving as a liason to turn stakeholder needs into technical and actionable solutions<br>
-      <br><br>
-      Use the link above to view my portfolio details, including project objectives, challenges, solutions, and measurable business outcomes.
-        
+        Documentation · Knowledge · Operations · Process Improvement
       </p>
+    </div>
 
-      <h3><a href="services/index.html">Services</a></h3>
-      <p>
-      Every organization has opportunities to reduce friction, improve efficiency, and better leverage its knowledge. I provide consulting and project-based services designed to help businesses work smarter.<br>
-      My services include:<br>
-      - Knowledge Management & Documentation <br>
-      - Operations and Workflow Optimization<br>
-      - Platform Administration<br>
-      - Data Analysis<br><br>
+    <div class="footer-links">
+      <a href="portfolio/index.html">Work</a>
+      <a href="services/index.html">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-      Use the link above to view more details about what I can optimize for your organization.
-      </p>
+  </footer>
 
-  </div>
 
-</div>
-
-  <!--MAKES THE DARK MODE BUTTON WORK -->
+  <!-- DARK MODE -->
   <script>
-  const toggle = document.getElementById("themeToggle");
 
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
+    const toggle = document.getElementById("themeToggle");
 
-    // optional: remember choice
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      toggle.textContent = "☀️";
-    } else {
-      localStorage.setItem("theme", "light");
-      toggle.textContent = "🌙";
+    toggle.addEventListener("click", () => {
+
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        toggle.textContent = "☀";
+      } else {
+        localStorage.setItem("theme", "light");
+        toggle.textContent = "◐";
+      }
+
+    });
+
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+      toggle.textContent = "☀";
     }
-  });
 
-  // load saved theme on page load
-  const saved = localStorage.getItem("theme");
+  </script>
 
-  if (saved === "dark") {
-    document.body.classList.add("dark");
-    toggle.textContent = "☀️";
-  }
-</script>
-  
-<!-- SAMPLE SECTION
-  <div class="post">
-  <h2>Welcome</h2>
-  <div class="date">June 3, 2026</div>
-  <p>This is my first post. It feels good to start.</p>
-
-  <ul>
-  <li><a href="january/index.html">January</a></li>
-</ul>
-</div>
--->
-  
 </body>
-  
 </html>
